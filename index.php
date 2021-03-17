@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>PHP-Tutorial</title>
-</head>
-<style type="text/css">
-	h1{
-		background: gray;
-		padding: 2em;
-		text-align: center;
-	}
-</style>
-<body>
-	<header>
-		<h1>
-			<?= "My name is ". htmlspecialchars($_GET['name']); ?>
-		</h1>
-	</header>
-</body>
-</html>
+<?php
+	$greeting = "Hello, world";
+	require('index.view.php');
