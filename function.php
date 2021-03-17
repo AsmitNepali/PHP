@@ -24,6 +24,13 @@
 		}
 	}
 
+	function fetchAllData($pdo)
+	{
+		$statement = $pdo->prepare('select * from todo');
+		$statement->execute();
+		return $statement->fetchAll(PDO::FETCH_CLASS,'Task'); // using FETCH_CLASS we can access all the punblic property of Task class
+	}
+
 	function dd($data)
 	{
 		echo"<pre>";
