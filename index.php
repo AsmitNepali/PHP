@@ -1,3 +1,4 @@
 <?php 
-	echo "Hello World\n";
+	$greeting = "Hello Universe"; 	
+	echo "$greeting"." I'm here";
 ?>
