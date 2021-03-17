@@ -14,13 +14,18 @@
 	<header>
 		<h1>
 			<ul>
-				<?php
-					foreach($person as $feature => $val):?>
-						<!-- Html List -->
-						<li><strong><?= $feature; ?></strong> <?= $val; ?></li>
-					<?php endforeach ?>
 			</ul>
 		</h1>
 	</header>
+	<?php
+		if($task['status'])
+		{
+			echo "&#9989";
+		} 
+		else
+		{
+			echo "Task Incomplete.";
+		}
+	?>
 </body>
 </html>

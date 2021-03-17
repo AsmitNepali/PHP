@@ -2,6 +2,6 @@
 	$task = [
 			'title' => 'Paypal Payment getway',
 			'due' => 'Today',
-			'status' => false
+			'status' => true
 		];
-	require('index.view.php');
+require('index.view.php');
