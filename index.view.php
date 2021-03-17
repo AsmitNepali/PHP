@@ -15,11 +15,10 @@
 		<h1>
 			<ul>
 				<?php
-					foreach($heros as $hero)
-					{
-						echo "<li>$hero</li>";
-					}
-				?>
+					foreach($heros as $hero):?>
+						<!-- Html List -->
+						<li><?= $hero; ?></li>
+					<?php endforeach ?>
 			</ul>
 		</h1>
 	</header>
