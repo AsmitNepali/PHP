@@ -15,9 +15,9 @@
 		<h1>
 			<ul>
 				<?php
-					foreach($heros as $hero):?>
+					foreach($person as $feature => $val):?>
 						<!-- Html List -->
-						<li><?= $hero; ?></li>
+						<li><strong><?= $feature; ?></strong> <?= $val; ?></li>
 					<?php endforeach ?>
 			</ul>
 		</h1>
