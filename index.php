@@ -13,10 +13,7 @@
 <body>
 	<header>
 		<h1>
-			<?php
-				$name = "Asmit";
-				echo "My name is ".$name;
-			?>
+			<?= "My name is ". htmlspecialchars($_GET['name']); ?>
 		</h1>
 	</header>
 </body>
