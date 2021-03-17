@@ -13,7 +13,14 @@
 <body>
 	<header>
 		<h1>
-			<?= $greeting; ?>
+			<ul>
+				<?php
+					foreach($heros as $hero)
+					{
+						echo "<li>$hero</li>";
+					}
+				?>
+			</ul>
 		</h1>
 	</header>
 </body>
