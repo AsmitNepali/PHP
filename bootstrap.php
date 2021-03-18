@@ -6,3 +6,7 @@ require 'database/Connection.php';
 
 // For Build the queries
 require 'database/QueryBuilder.php';
+
+return new QueryBuilder(
+			Connection::make()
+		);
