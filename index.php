@@ -1,8 +1,6 @@
 <?php
 
-require 'function.php';
-require 'database/Connection.php';
-require 'database/QueryBuilder.php';
+require 'bootstrap.php';
 require 'Task.php';
 
 $pdo = Connection::make();
