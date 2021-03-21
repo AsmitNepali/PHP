@@ -16,11 +16,8 @@ $posts = [
 			new Post('My fourth post', false)
 		];
 
-$unPlishedPosts = array_filter($posts, function($post) {
-	return ! $post->publisheStatus;
-});
-
-$uplishedPosts = array_filter($posts, function($post) {
-	return $post->publisheStatus;
-});
-var_dump($unPlishedPosts);
+$modified = array_map(function($post){
+	$post->publisheStatus = true;
+	return $post;
+}, $posts);
+var_dump($modified);
