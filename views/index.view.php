@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>PHP-Tutorial</title>
 </head>
@@ -10,17 +11,16 @@
 		text-align: center;
 	}*/
 </style>
+
 <body>
 	<header>
-		<h1>
-			<ul>
-			</ul>
-		</h1>
+		<h1>Submit Your Data</h1>
 	</header>
-	<ul>
-		<?php foreach($tasks as $task):?>
-			<li><?= $task->description; ?></li>
-		<?php endforeach?>
-	</ul>
+	<form method="GET" action="name">
+		<input type="text" name="name" placeholder="Enter your name" />
+		<button type="submit">Submit</button>
+	</form>
+
 </body>
+
 </html>
