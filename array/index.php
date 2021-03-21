@@ -9,10 +9,14 @@
 			$this->publisheStatus = $status;
 		}
 }
-$post = [
+$posts = [
 			new Post('My fist post', true),
 			new Post('My second post', true),
 			new Post('My third post', true),
 			new Post('My fourth post', false)
 		];
-var_dump($post);
+
+$unPlishedPosts = array_filter($posts, function($post) {
+	return $post->publisheStatus === false;
+});
+var_dump($unPlishedPosts);
