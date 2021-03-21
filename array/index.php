@@ -16,8 +16,5 @@ $posts = [
 			new Post('My fourth post', false)
 		];
 
-$modified = array_map(function($post){
-	$post->publisheStatus = true;
-	return $post;
-}, $posts);
-var_dump($modified);
+$titles = array_column($posts, 'title');
+var_dump($titles);
