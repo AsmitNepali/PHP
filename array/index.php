@@ -17,6 +17,10 @@ $posts = [
 		];
 
 $unPlishedPosts = array_filter($posts, function($post) {
-	return $post->publisheStatus === false;
+	return ! $post->publisheStatus;
+});
+
+$uplishedPosts = array_filter($posts, function($post) {
+	return $post->publisheStatus;
 });
 var_dump($unPlishedPosts);
