@@ -16,5 +16,7 @@ $posts = [
 			new Post('My fourth post', false)
 		];
 
-$titles = array_column($posts, 'title');
-var_dump($titles);
+foreach($posts as $index=>$post){
+	$posts[$index] = (array) $post;
+}
+var_dump($posts);
