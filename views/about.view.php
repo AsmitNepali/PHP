@@ -1,8 +1,5 @@
-<html>
-    <head>
-        <title>About</title>
-    </head>
-    <body>
-        <h1>About</h1>
-    </body>
+<?php require('partials/head.php');?>
+<body>
+    <h1>About</h1>    
+</body>
 </html>

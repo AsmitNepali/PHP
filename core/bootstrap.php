@@ -6,6 +6,7 @@ $config = require 'config.php';
 require 'function.php';
 
 // For routing
+require 'core/Request.php';
 require 'core/Router.php';
 
 // For create connection with database

@@ -3,6 +3,13 @@
 
 		protected $routes = [];
 
+		public static function load($file){
+
+			$router = new self; // or new static
+			require $file;
+			return $router;
+		}
+
 		public function define($routes){
 			$this->routes = $routes;
 		}
