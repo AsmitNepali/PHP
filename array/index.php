@@ -16,7 +16,7 @@ $posts = [
 			new Post('My fourth post', false)
 		];
 
-foreach($posts as $index=>$post){
-	$posts[$index] = (array) $post;
-}
+array_map(function($post){
+	return (array) $post;
+},$post);
 var_dump($posts);
