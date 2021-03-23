@@ -16,7 +16,7 @@
 	<header>
 		<h1>Submit Your Data</h1>
 	</header>
-	<form method="GET" action="name">
+	<form method="POST" action="name">
 		<input type="text" name="name" placeholder="Enter your name" />
 		<button type="submit">Submit</button>
 	</form>
